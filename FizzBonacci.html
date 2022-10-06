@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FizzBuzz</title>
+		<script>
+			function fizzBuzz() {
+				//for console
+				for (let i = 0; i < 100; )
+					console.log((i++ % 3 ? '' : 'fizz') + (i % 5 ? '' : 'buzz') || i);
+
+				//visual representation
+
+				let num = 0;
+				do {
+					document.querySelector('output').appendChild(num);
+					num++;
+				} while (num < 100);
+			}
+
+			function fibonacci() {
+				const fibonacci = (n) => {
+					let a = 0,
+						b = 1,
+						c = n;
+
+					for (let i = 2; i <= n; i++) {
+						c = a + b;
+						a = b;
+						b = c;
+						console.log(c);
+					}
+				};
+			}
+		</script>
+		<style>
+			body {
+				background-color: black;
+				color: green;
+				padding: 10;
+				font-family: 'silkscreen';
+				font-size: 3em;
+			}
+		</style>
+	</head>
+	<body>
+		<p>What's up chum...</p>
+		<p>Wacha want to see?</p>
+		<button onclick="fizzBuzz()">FizzBuzz</button>
+		<button onclick="fibonacci ()">fibonacci</button>
+
+		<output>
+			<p></p>
+		</output>
+	</body>
+</html>

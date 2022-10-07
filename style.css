@@ -1,0 +1,51 @@
+body {
+	background-color: black;
+	color: green;
+	padding: 10px;
+	font-family: 'silkscreen';
+	font-size: 2em;
+	overflow: hidden;
+}
+
+.greeting {
+	width: 75%;
+	margin-top: 0;
+}
+
+.outputFizzBuzz {
+	font-size: 20px;
+	height: 83vh;
+	width: 100px;
+	padding: 0;
+	list-style-type: none;
+	overflow: scroll;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+
+.outputFizzBuzz::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+button {
+	background-color: transparent;
+	color: green;
+	font-family: 'silkscreen';
+	font-size: 1em;
+	cursor: pointer;
+	border: 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.fizzbuzz {
+	color: blue;
+}
+
+.fibonacci {
+	color: red;
+}
+
+.hidden {
+	visibility: hidden;
+}

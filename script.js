@@ -66,5 +66,37 @@ document.addEventListener('DOMContentLoaded', function () {
 			console.log(b);
 			num--;
 		}
+
+		draw();
+	}
+	const canvas = document.querySelector('#placeForFibo');
+	const ctx = canvas.getContext('2d');
+	function draw() {
+		ctx.fillStyle = 'red';
+		ctx.fillRect(130, 390, 10, 10);
+
+		ctx.fillStyle = 'blue';
+		ctx.fillRect(140, 390, 10, 10);
+
+		ctx.fillStyle = 'purple';
+		ctx.fillRect(130, 400, 20, 20);
+
+		ctx.fillStyle = 'green';
+		ctx.fillRect(100, 390, 30, 30);
+
+		ctx.fillStyle = 'yellow';
+		ctx.fillRect(100, 340, 50, 50);
+
+		ctx.fillStyle = 'pink';
+		ctx.fillRect(150, 340, 80, 80);
+
+		ctx.fillStyle = 'white';
+		ctx.fillRect(100, 420, 130, 130);
+
+		ctx.fillStyle = 'cyan';
+		ctx.fillRect(230, 340, 210, 210);
+
+		ctx.fillStyle = 'magenta';
+		ctx.fillRect(100, 0, 340, 340);
 	}
 });
